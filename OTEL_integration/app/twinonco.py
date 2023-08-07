@@ -2,9 +2,9 @@ import uvicorn
 from fastapi import FastAPI
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 from fastapi.logger import logger
-from context_propgation_trial2.otel_settings.logging import setup_logging
-from context_propgation_trial2.otel_settings.otel import setup_otel
-from context_propgation_trial2.trace_settings.context_propagation import send_requests
+from OTEL_integration.otel_settings.logging import setup_logging
+from OTEL_integration.otel_settings.otel import setup_otel
+from OTEL_integration.trace_settings.context_propagation import send_requests
 import requests
 
 app = FastAPI()
